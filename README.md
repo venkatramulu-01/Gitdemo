@@ -1,2 +1,3 @@
 # Gitdemo
-This is the first demo of my git
+This is the first demo of new one
+hello
