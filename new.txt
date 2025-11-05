@@ -1,0 +1,110 @@
+1️⃣ What is Branching and Merging?
+
+
+Branching = Creating a separate copy of your code to work on a new feature or fix without affecting the main code.
+
+
+Example: You create a feature-login branch to work on login functionality.
+
+
+
+
+Merging = Bringing your changes from that branch back into the main code (like main branch) after testing and reviewing.
+
+
+
+💻 2️⃣ Do it Using Git Commands (on your system)
+Step 1: Check current branch
+git branch
+
+This shows which branch you’re currently on (the active one has a * before it).
+
+Step 2: Create a new branch
+git branch feature-login
+
+✅ Creates a branch named feature-login.
+
+Step 3: Switch to the new branch
+git checkout feature-login
+
+Now you’re working on that branch. (Alternatively: git switch feature-login)
+
+Step 4: Make changes and commit
+Edit your files → then:
+git add .
+git commit -m "Added login feature"
+
+
+Step 5: Push your new branch to GitHub
+git push -u origin feature-login
+
+✅ Now your branch is visible on GitHub under the "Branches" tab.
+
+Step 6: Merge the branch back into main
+Switch back to main:
+git checkout main
+
+Then merge:
+git merge feature-login
+
+✅ Now main has all the changes from feature-login.
+
+Step 7: Push the merged main branch to GitHub
+git push origin main
+
+
+Step 8: (Optional) Delete the feature branch
+After merging:
+git branch -d feature-login
+
+and on GitHub:
+git push origin --delete feature-login
+
+
+🌐 3️⃣ Doing Branching and Merging on GitHub Website
+👉 Create a new branch
+
+
+Go to your repo on GitHub.
+
+
+Click the Branch dropdown (usually shows “main”).
+
+
+Type your new branch name (like feature-login) and press Enter.
+
+
+
+👉 Make changes
+
+
+Edit files directly on that branch or push commits to it from your local system.
+
+
+
+👉 Create a Pull Request (PR)
+
+
+Go to the Pull Requests tab.
+
+
+Click New Pull Request.
+
+
+Select base: main ← compare: feature-login.
+
+
+Click Create Pull Request.
+
+
+Add title & description → then click Merge Pull Request.
+
+
+
+👉 Delete branch (optional)
+After merging, GitHub will give you a “Delete branch” option.
+
+🧠 Quick Summary
+ActionCommandCheck branchesgit branchCreate branchgit branch branch-nameSwitch branchgit checkout branch-nameAdd changesgit add .Commitgit commit -m "message"Mergegit merge branch-namePush branchgit push -u origin branch-nameDelete branchgit branch -d branch-name
+
+Would you like me to show you a small example project (like a “Hello World” file) with branching and merging commands step-by-step in terminal output format?
