@@ -1,0 +1,4 @@
+https://cdn.jsdelivr.net/npm/chart.js
+
+apikey=0d7ff2ad17446d5c777a29ec4181a412
+response=https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric
