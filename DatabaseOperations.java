@@ -23,7 +23,6 @@ public class DatabaseOperations{
             e.printStackTrace();
         }
     }
-    //private static void delete
     private static void deleteRecord(Statement statement,int id) throws SQLException{
        String deleteQuery = "DELETE FROM employees WHERE id = " + id;
         statement.executeUpdate(deleteQuery);
@@ -53,4 +52,5 @@ public class DatabaseOperations{
       System.out.println();
       resultSet.close();
     }
+
 }
